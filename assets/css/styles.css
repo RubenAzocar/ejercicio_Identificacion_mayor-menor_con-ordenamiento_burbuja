@@ -1,65 +1,89 @@
+/* ========================================
+   ESTILOS DEL BODY (CUERPO DE LA PÁGINA)
+   ======================================== */
+/* Configuración general de la página completa */
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 20px;
+    font-family: Arial, sans-serif;  /* Tipografía para todo el texto */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);  /* Fondo degradado morado */
+    min-height: 100vh;  /* Altura mínima de 100% de la ventana */
+    display: flex;  /* Uso de flexbox para centrar contenido */
+    justify-content: center;  /* Centrado horizontal */
+    align-items: center;  /* Centrado vertical */
+    margin: 0;  /* Sin márgenes externos */
+    padding: 20px;  /* Espaciado interno de 20 píxeles */
 }
 
+/* ========================================
+   CONTENEDOR PRINCIPAL
+   ======================================== */
+/* Caja blanca central que contiene todo el contenido */
 .container {
-    background: white;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    max-width: 600px;
-    width: 100%;
+    background: white;  /* Fondo blanco */
+    padding: 40px;  /* Espaciado interno */
+    border-radius: 15px;  /* Bordes redondeados */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);  /* Sombra para efecto de profundidad */
+    max-width: 600px;  /* Ancho máximo de 600 píxeles */
+    width: 100%;  /* Ocupa el 100% del espacio disponible hasta el máximo */
 }
 
+/* ========================================
+   ESTILOS DE TÍTULOS
+   ======================================== */
+/* Título principal (h1) */
 h1 {
-    color: #667eea;
-    text-align: center;
-    margin-bottom: 10px;
+    color: #667eea;  /* Color morado */
+    text-align: center;  /* Texto centrado */
+    margin-bottom: 10px;  /* Espacio inferior */
 }
 
+/* Subtítulo (h2) */
 h2 {
-    color: #764ba2;
-    font-size: 18px;
-    text-align: center;
-    margin-bottom: 30px;
+    color: #764ba2;  /* Color morado más oscuro */
+    font-size: 18px;  /* Tamaño de fuente */
+    text-align: center;  /* Texto centrado */
+    margin-bottom: 30px;  /* Espacio inferior */
 }
 
+/* ========================================
+   SECCIÓN DE RESULTADOS
+   ======================================== */
+/* Caja donde se muestran los resultados del programa */
 .resultado {
-    background: #f8f9fa;
-    padding: 20px;
-    border-radius: 10px;
-    border-left: 5px solid #667eea;
-    margin-top: 20px;
-    min-height: 100px;
+    background: #f8f9fa;  /* Fondo gris claro */
+    padding: 20px;  /* Espaciado interno */
+    border-radius: 10px;  /* Bordes redondeados */
+    border-left: 5px solid #667eea;  /* Borde izquierdo morado como acento */
+    margin-top: 20px;  /* Espacio superior */
+    min-height: 100px;  /* Altura mínima */
 }
 
+/* Párrafos dentro de la sección de resultados */
 .resultado p {
-    margin: 10px 0;
-    line-height: 1.6;
-    color: #333;
+    margin: 10px 0;  /* Márgenes verticales */
+    line-height: 1.6;  /* Altura de línea para mejor legibilidad */
+    color: #333;  /* Color de texto gris oscuro */
 }
 
+/* Texto en negrita dentro de resultados */
 .resultado strong {
-    color: #667eea;
+    color: #667eea;  /* Color morado para destacar */
 }
 
+/* ========================================
+   SECCIÓN DE INSTRUCCIONES
+   ======================================== */
+/* Caja amarilla con las instrucciones para el usuario */
 .instrucciones {
-    background: #fff3cd;
-    padding: 15px;
-    border-radius: 8px;
-    border-left: 4px solid #ffc107;
-    margin-bottom: 20px;
+    background: #fff3cd;  /* Fondo amarillo claro */
+    padding: 15px;  /* Espaciado interno */
+    border-radius: 8px;  /* Bordes redondeados */
+    border-left: 4px solid #ffc107;  /* Borde izquierdo amarillo como acento */
+    margin-bottom: 20px;  /* Espacio inferior */
 }
 
+/* Párrafos dentro de las instrucciones */
 .instrucciones p {
-    margin: 5px 0;
-    color: #856404;
-    font-size: 14px;
+    margin: 5px 0;  /* Márgenes verticales reducidos */
+    color: #856404;  /* Color marrón/dorado para contraste con fondo amarillo */
+    font-size: 14px;  /* Tamaño de fuente */
 }
