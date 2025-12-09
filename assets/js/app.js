@@ -16,7 +16,7 @@ let n;
 
 do {
     n = 0;
-    
+
     for (let j = 1; j < lista.length; j++) {
         if (lista[j - 1] > lista[j]) {
             let loquesea = lista[j - 1];
