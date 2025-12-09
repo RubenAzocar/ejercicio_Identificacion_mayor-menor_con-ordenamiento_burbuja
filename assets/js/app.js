@@ -8,28 +8,28 @@ if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
     alert("Error: Debe ingresar valores numéricos válidos.");
     document.getElementById('resultado').innerHTML = "<p style='color: red;'>Error: Ingrese números válidos.</p>";
 } else {
-    // Ordenamiento burbuja simple
-    // Comparar y ordenar los tres números
+    // Ordenamiento burbuja con do-while
     var temp;
+    var intercambio;
 
-    // Primera pasada
-    if (num1 > num2) {
-        temp = num1;
-        num1 = num2;
-        num2 = temp;
-    }
-    if (num2 > num3) {
-        temp = num2;
-        num2 = num3;
-        num3 = temp;
-    }
+    do {
+        intercambio = false;
 
-    // Segunda pasada
-    if (num1 > num2) {
-        temp = num1;
-        num1 = num2;
-        num2 = temp;
-    }
+        if (num1 > num2) {
+            temp = num1;
+            num1 = num2;
+            num2 = temp;
+            intercambio = true;
+        }
+
+        if (num2 > num3) {
+            temp = num2;
+            num2 = num3;
+            num3 = temp;
+            intercambio = true;
+        }
+
+    } while (intercambio);
 
     // Ahora num1 es el menor y num3 es el mayor
     var menor = num1;
